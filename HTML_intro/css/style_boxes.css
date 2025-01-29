@@ -1,0 +1,29 @@
+
+
+div {
+ width: 100px;
+ height: 100px;
+ border-color: #0000;
+}
+
+body {
+    background-color: #FBF5DD;
+}
+
+.top{
+    background-color: #441752;
+    border: 10px solid;
+    
+}
+
+.middle{
+    background-color: #A888B5;
+    margin-left: 119px;
+    border: 20px solid;
+}
+
+.bottom{
+    background-color: #EFB6C8;
+    border: 10px solid;
+    margin-left: 258px;
+}
