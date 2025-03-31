@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './User.module.css';
 import Card from './Card';
 
-interface UserProps = {
+interface UserProps  {
   user: {
     id: number;
     name: string;
