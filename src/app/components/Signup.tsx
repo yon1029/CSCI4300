@@ -5,8 +5,16 @@ import Button from './Button';
 import styles from './Signup.module.css'; 
 
 interface SignupProps {
-  onAddUser: (newUser: any) => void;
+  onAddUser: (newUser: {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    password: string;
+    imageUrl: string;
+  }) => void;
 }
+
 
 export default function Signup( {onAddUser} : SignupProps) {
 
@@ -16,7 +24,7 @@ export default function Signup( {onAddUser} : SignupProps) {
   const [password, setPassword] = useState('');
   const [imageUrl, setImageUrl] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!username || !password) {
       alert('Username and password are required!');
